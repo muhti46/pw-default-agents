@@ -1,0 +1,4 @@
+
+> pw-default-agents@1.0.0 test:smoke
+> cucumber-js --tags "@smoke"
+

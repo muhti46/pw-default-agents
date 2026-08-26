@@ -12,7 +12,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 198656399
+              "duration": 266120399
             },
             "keyword": "Before",
             "hidden": true
@@ -20,7 +20,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1765429000
+              "duration": 2962094000
             },
             "arguments": [],
             "keyword": "Given ",
@@ -33,7 +33,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 471742299
+              "duration": 839975200
             },
             "arguments": [],
             "keyword": "When ",
@@ -46,7 +46,7 @@
           {
             "result": {
               "status": "failed",
-              "duration": 5017504099,
+              "duration": 5015700800,
               "error_message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByTestId('cards-card-summary')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 5000ms\n  - waiting for getByTestId('cards-card-summary')\n\n    at captureRawStack (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright-core\\lib\\coreBundle.js:9681:17)\n    at callMatcherAsStep (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13310:57)\n    at Object.toBeVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13300:23)\n    at BasePage.verifyVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\support\\BasePage.ts:24:27)\n    at CustomWorld.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\step_definitions\\credit_card.steps.ts:17:23)"
             },
             "arguments": [],
@@ -60,7 +60,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 48485699
+              "duration": 45590400
             },
             "keyword": "After",
             "hidden": true
@@ -104,7 +104,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 187038699
+              "duration": 187777100
             },
             "keyword": "Before",
             "hidden": true
@@ -112,7 +112,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 316778299
+              "duration": 605968000
             },
             "arguments": [],
             "keyword": "Given ",
@@ -125,7 +125,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 482821099
+              "duration": 533308000
             },
             "arguments": [],
             "keyword": "When ",
@@ -138,7 +138,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1870881900
+              "duration": 1354278400
             },
             "arguments": [],
             "keyword": "Then ",
@@ -151,7 +151,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 62908199
+              "duration": 59496299
             },
             "keyword": "After",
             "hidden": true
@@ -179,7 +179,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 177205899
+              "duration": 177072000
             },
             "keyword": "Before",
             "hidden": true
@@ -187,7 +187,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 715351500
+              "duration": 770557199
             },
             "arguments": [],
             "keyword": "Given ",
@@ -200,7 +200,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 171371800
+              "duration": 207013900
             },
             "arguments": [],
             "keyword": "When ",
@@ -213,7 +213,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1354134299
+              "duration": 2854773300
             },
             "arguments": [],
             "keyword": "Then ",
@@ -226,7 +226,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 46959600
+              "duration": 48380099
             },
             "keyword": "After",
             "hidden": true
@@ -265,7 +265,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 179123900
+              "duration": 175688300
             },
             "keyword": "Before",
             "hidden": true
@@ -273,7 +273,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1701898299
+              "duration": 2335347800
             },
             "arguments": [],
             "keyword": "Given ",
@@ -286,7 +286,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 577110199
+              "duration": 743393000
             },
             "arguments": [],
             "keyword": "When ",
@@ -299,7 +299,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 4071699
+              "duration": 3836999
             },
             "arguments": [],
             "keyword": "Then ",
@@ -312,7 +312,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 39635999
+              "duration": 42723500
             },
             "keyword": "After",
             "hidden": true
@@ -340,7 +340,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 180390599
+              "duration": 173873800
             },
             "keyword": "Before",
             "hidden": true
@@ -348,7 +348,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1757086699
+              "duration": 2420603399
             },
             "arguments": [],
             "keyword": "Given ",
@@ -361,7 +361,7 @@
           {
             "result": {
               "status": "failed",
-              "duration": 30015849699,
+              "duration": 30007829900,
               "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:635:17)\n    at processTimers (node:internal/timers:571:7)"
             },
             "arguments": [],
@@ -388,7 +388,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 39125599
+              "duration": 41224900
             },
             "keyword": "After",
             "hidden": true
@@ -427,7 +427,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 165540500
+              "duration": 193202799
             },
             "keyword": "Before",
             "hidden": true
@@ -435,7 +435,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1874354699
+              "duration": 2900827499
             },
             "arguments": [],
             "keyword": "Given ",
@@ -448,7 +448,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 530750499
+              "duration": 504343999
             },
             "arguments": [],
             "keyword": "When ",
@@ -460,9 +460,8 @@
           },
           {
             "result": {
-              "status": "failed",
-              "duration": 5036712200,
-              "error_message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByTestId('transactions-balance')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 5000ms\n  - waiting for getByTestId('transactions-balance')\n\n    at captureRawStack (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright-core\\lib\\coreBundle.js:9681:17)\n    at callMatcherAsStep (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13310:57)\n    at Object.toBeVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13300:23)\n    at BasePage.verifyVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\support\\BasePage.ts:24:27)\n    at CustomWorld.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\step_definitions\\statements_and_history.steps.ts:11:23)"
+              "status": "passed",
+              "duration": 21245999
             },
             "arguments": [],
             "keyword": "Then ",
@@ -475,7 +474,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 39983400
+              "duration": 37899700
             },
             "keyword": "After",
             "hidden": true
@@ -519,7 +518,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 177018600
+              "duration": 175968799
             },
             "keyword": "Before",
             "hidden": true
@@ -527,7 +526,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2340665899
+              "duration": 2253159699
             },
             "arguments": [],
             "keyword": "Given ",
@@ -540,7 +539,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 488377999
+              "duration": 550781900
             },
             "arguments": [],
             "keyword": "When ",
@@ -553,8 +552,8 @@
           {
             "result": {
               "status": "failed",
-              "duration": 5008741000,
-              "error_message": "Error: expect(locator).toBeVisible() failed\n\nLocator:  getByTestId('accounts-list')\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 5000ms\n  - waiting for getByTestId('accounts-list')\n    14 × locator resolved to <div data-testid=\"accounts-list\" class=\"grid gap-4 sm:grid-cols-2\"></div>\n       - unexpected value \"hidden\"\n\n    at captureRawStack (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright-core\\lib\\coreBundle.js:9681:17)\n    at callMatcherAsStep (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13310:57)\n    at Object.toBeVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13300:23)\n    at BasePage.verifyVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\support\\BasePage.ts:24:27)\n    at CustomWorld.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\step_definitions\\your_accounts.steps.ts:10:23)"
+              "duration": 5025933000,
+              "error_message": "Error: expect(locator).toContainText(expected) failed\n\nLocator: getByTestId('accounts-list')\nExpected substring: \"Checking\"\nReceived string:    \"Savings••1264$0.00\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"to.have.text\" with timeout 5000ms\n  - waiting for getByTestId('accounts-list')\n    14 × locator resolved to <div data-testid=\"accounts-list\" class=\"grid gap-4 sm:grid-cols-2\">…</div>\n       - unexpected value \"Savings••1264$0.00\"\n\n    at captureRawStack (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright-core\\lib\\coreBundle.js:9681:17)\n    at callMatcherAsStep (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13310:57)\n    at Object.toContainText (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13300:23)\n    at BasePage.verifyText (C:\\Users\\muhte\\Desktop\\pw-default-agents\\support\\BasePage.ts:32:27)\n    at CustomWorld.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\step_definitions\\your_accounts.steps.ts:11:23)"
             },
             "arguments": [],
             "keyword": "Then ",
@@ -567,7 +566,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 49244800
+              "duration": 38376600
             },
             "keyword": "After",
             "hidden": true
@@ -595,7 +594,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 165959500
+              "duration": 184980700
             },
             "keyword": "Before",
             "hidden": true
@@ -603,7 +602,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2388523600
+              "duration": 2362433000
             },
             "arguments": [],
             "keyword": "Given ",
@@ -616,7 +615,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 593963900
+              "duration": 676502699
             },
             "arguments": [],
             "keyword": "When ",
@@ -629,7 +628,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 19187899
+              "duration": 20526400
             },
             "arguments": [],
             "keyword": "Then ",
@@ -642,7 +641,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 36610499
+              "duration": 41007899
             },
             "keyword": "After",
             "hidden": true
@@ -681,7 +680,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 177161999
+              "duration": 175998599
             },
             "keyword": "Before",
             "hidden": true
@@ -689,7 +688,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1700419999
+              "duration": 2397048599
             },
             "arguments": [],
             "keyword": "Given ",
@@ -702,7 +701,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 698373500
+              "duration": 395373500
             },
             "arguments": [],
             "keyword": "When ",
@@ -715,7 +714,7 @@
           {
             "result": {
               "status": "failed",
-              "duration": 5024374199,
+              "duration": 5036223099,
               "error_message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByTestId('profile-firstname-input')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 5000ms\n  - waiting for getByTestId('profile-firstname-input')\n\n    at captureRawStack (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright-core\\lib\\coreBundle.js:9681:17)\n    at callMatcherAsStep (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13310:57)\n    at Object.toBeVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13300:23)\n    at BasePage.verifyVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\support\\BasePage.ts:24:27)\n    at CustomWorld.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\step_definitions\\your_details_and_security.steps.ts:11:23)"
             },
             "arguments": [],
@@ -729,7 +728,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 35875899
+              "duration": 42786900
             },
             "keyword": "After",
             "hidden": true
@@ -773,7 +772,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 166083500
+              "duration": 187395400
             },
             "keyword": "Before",
             "hidden": true
@@ -781,7 +780,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2327767299
+              "duration": 3564209400
             },
             "arguments": [],
             "keyword": "Given ",
@@ -794,7 +793,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 4065799
+              "duration": 6622699
             },
             "arguments": [],
             "keyword": "Then ",
@@ -807,7 +806,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 43751399
+              "duration": 36972399
             },
             "keyword": "After",
             "hidden": true
@@ -835,7 +834,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 171671799
+              "duration": 162204599
             },
             "keyword": "Before",
             "hidden": true
@@ -843,7 +842,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2337775999
+              "duration": 2810188000
             },
             "arguments": [],
             "keyword": "Given ",
@@ -856,7 +855,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 29591100
+              "duration": 26578500
             },
             "arguments": [],
             "keyword": "When ",
@@ -869,7 +868,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 823961299
+              "duration": 827013999
             },
             "arguments": [],
             "keyword": "Then ",
@@ -882,7 +881,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 36204299
+              "duration": 38536900
             },
             "keyword": "After",
             "hidden": true

@@ -49,5 +49,4 @@ Beim Build kann die Test-Suite gewählt werden:
 
 ## Hinweis
 
-Das Projekt ist aktuell **kein Git-Repository**. Für Jenkins (Pipeline script from SCM) muss es
-zuerst in ein Git-Repository gepusht werden (z. B. GitHub/GitLab), damit Jenkins es auschecken kann.
+
