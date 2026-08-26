@@ -6,3 +6,10 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Test reports / artifacts
+/allure-results/
+/allure-report/
+/cucumber-report.html
+/cucumber-report.json
+/test-cases-report.html
