@@ -24,11 +24,12 @@ pipeline {
     }
 
     environment {
-        // Optional: Werte aus Jenkins-Credentials überschreiben die Fallbacks im Testcode.
-        // Leer lassen, wenn die hartkodierten Testdaten verwendet werden sollen.
-        ZINCBANK_EMAIL   = credentials('zincbank-email')
-        ZINCBANK_PASSWORD = credentials('zincbank-password')
-        HEADED           = 'false'
+        // Testdaten kommen aus support/common.steps.ts (Fallback).
+        // Optional: Jenkins-Credentials "zincbank-email" / "zincbank-password" anlegen
+        // und die Zeilen unten einkommentieren, um sie zu überschreiben.
+        // ZINCBANK_EMAIL   = credentials('zincbank-email')
+        // ZINCBANK_PASSWORD = credentials('zincbank-password')
+        HEADED = 'false'
     }
 
     stages {
@@ -57,7 +58,8 @@ pipeline {
         stage('Install Playwright Browsers') {
             steps {
                 nodejs(nodeJSInstallationName: 'NodeJS') {
-                    sh 'npx playwright install chromium --with-deps'
+                    // Windows: --with-deps wird nicht unterstützt
+                    sh 'npx playwright install chromium'
                 }
             }
         }
