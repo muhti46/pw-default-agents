@@ -1,0 +1,24 @@
+#!/bin/sh
+# Pre-commit hook: block commits that contain likely secrets.
+# Install:  copy scripts/pre-commit .git/hooks/pre-commit
+# Works on Windows via Git for Windows' bundled sh.
+
+# Patterns that indicate a hardcoded secret. Keep this list tight to avoid false positives.
+PATTERNS='(AKIA[0-9A-Z]{16}|-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----|(api[_-]?key|secret|password|token|passwd)[[:space:]]*[:=][[:space:]]*["'"'"'][A-Za-z0-9_\-]{12,}["'"'"'])'
+
+# Jenkins API token format: 32 lowercase hex chars assigned to a TOKEN var
+JENKINS_TOKEN='TOKEN[[:space:]]*=[[:space:]]*["'"'"'][0-9a-f]{32}["'"'"']'
+
+FILES=$(git diff --cached --name-only --diff-filter=ACM)
+if [ -z "$FILES" ]; then
+  exit 0
+fi
+
+# Scan the staged diff (added lines) so only what will be committed matters.
+if git diff --cached | grep -nEi "$PATTERNS|$JENKINS_TOKEN" >/dev/null 2>&1; then
+  echo "ERROR: Possible secret detected in staged changes. Commit blocked." >&2
+  echo "If this is a false positive, review the file and remove the secret." >&2
+  exit 1
+fi
+
+exit 0
