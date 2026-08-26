@@ -42,7 +42,7 @@ pipeline {
         stage('Setup Node') {
             steps {
                 nodejs(nodeJSInstallationName: 'NodeJS') {
-                    sh 'node --version && npm --version'
+                    bat 'node --version && npm --version'
                 }
             }
         }
@@ -50,7 +50,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 nodejs(nodeJSInstallationName: 'NodeJS') {
-                    sh 'npm ci'
+                    bat 'npm ci'
                 }
             }
         }
@@ -59,7 +59,7 @@ pipeline {
             steps {
                 nodejs(nodeJSInstallationName: 'NodeJS') {
                     // Windows: --with-deps wird nicht unterstützt
-                    sh 'npx playwright install chromium'
+                    bat 'npx playwright install chromium'
                 }
             }
         }
@@ -71,7 +71,7 @@ pipeline {
                         def cmd = params.TEST_SUITE == 'smoke' ? 'npm run test:smoke'
                                 : params.TEST_SUITE == 'regression' ? 'npm run test:regression'
                                 : 'npm run test:cucumber'
-                        sh cmd
+                        bat cmd
                     }
                 }
             }
@@ -80,7 +80,7 @@ pipeline {
         stage('Generate Allure Report') {
             steps {
                 nodejs(nodeJSInstallationName: 'NodeJS') {
-                    sh 'npm run allure:generate'
+                    bat 'npm run allure:generate'
                 }
             }
         }
@@ -91,8 +91,14 @@ pipeline {
             // Berichte als Build-Artefakte archivieren
             archiveArtifacts artifacts: 'cucumber-report.html, cucumber-report.json, allure-report/**', allowEmptyArchive: true
 
-            // Allure-Report im Jenkins veröffentlichen
-            allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+            // Allure-Report im Jenkins veröffentlichen (nur wenn Allure CLI konfiguriert ist)
+            script {
+                try {
+                    allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+                } catch (Exception e) {
+                    echo "Allure-Report übersprungen: ${e.message}"
+                }
+            }
         }
         success {
             echo '✅ Alle Tests bestanden.'
