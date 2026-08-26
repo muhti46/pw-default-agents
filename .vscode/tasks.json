@@ -1,0 +1,63 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Cucumber (headless)",
+      "type": "shell",
+      "command": "npm run test:cucumber",
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Cucumber (headed)",
+      "type": "shell",
+      "command": "npm run test:cucumber:headed",
+      "problemMatcher": []
+    },
+    {
+      "label": "Smoke",
+      "type": "shell",
+      "command": "npm run test:smoke",
+      "problemMatcher": []
+    },
+    {
+      "label": "Smoke + Reports (Cucumber & Allure)",
+      "type": "shell",
+      "command": "npm run smoke:report",
+      "problemMatcher": []
+    },
+    {
+      "label": "Smoke + Reports (headed)",
+      "type": "shell",
+      "command": "npm run smoke:report:headed",
+      "problemMatcher": []
+    },
+    {
+      "label": "Regression",
+      "type": "shell",
+      "command": "npm run test:regression",
+      "problemMatcher": []
+    },
+    {
+      "label": "Regression + Reports (Cucumber & Allure)",
+      "type": "shell",
+      "command": "npm run regression:report",
+      "problemMatcher": []
+    },
+    {
+      "label": "Regression + Reports (headed)",
+      "type": "shell",
+      "command": "npm run regression:report:headed",
+      "problemMatcher": []
+    },
+    {
+      "label": "Allure Report",
+      "type": "shell",
+      "command": "npm run allure:report",
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "pw-default-agents",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:cucumber": "cucumber-js",
+    "test:cucumber:headed": "cross-env HEADED=true cucumber-js",
+    "test:smoke": "cucumber-js --tags \"@smoke\"",
+    "test:smoke:headed": "cross-env HEADED=true cucumber-js --tags \"@smoke\"",
+    "test:regression": "cucumber-js --tags \"@regression\"",
+    "test:regression:headed": "cross-env HEADED=true cucumber-js --tags \"@regression\"",
+    "allure:clean": "node -e \"if (require('fs').existsSync('allure-results')) require('fs').rmSync('allure-results', { recursive: true })\"",
+    "allure:generate": "allure generate ./allure-results -o ./allure-report --clean",
+    "allure:open": "allure open ./allure-report",
+    "cucumber:open": "start cucumber-report.html",
+    "allure:report": "npm run allure:clean && npm run test:cucumber && npm run allure:generate && npm run cucumber:open && npm run allure:open",
+    "smoke:report": "npm run allure:clean && npm run test:smoke && npm run allure:generate && npm run cucumber:open && npm run allure:open",
+    "smoke:report:headed": "npm run allure:clean && npm run test:smoke:headed && npm run allure:generate && npm run cucumber:open && npm run allure:open",
+    "regression:report": "npm run allure:clean && npm run test:regression && npm run allure:generate && npm run cucumber:open && npm run allure:open",
+    "regression:report:headed": "npm run allure:clean && npm run test:regression:headed && npm run allure:generate && npm run cucumber:open && npm run allure:open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "@cucumber/html-formatter": "^24.1.1",
+    "@cucumber/pretty-formatter": "^4.0.1",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.1.2",
+    "allure-commandline": "^2.43.0",
+    "allure-cucumberjs": "^3.10.2",
+    "cross-env": "^10.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

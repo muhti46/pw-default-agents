@@ -1,0 +1,911 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "credit-card;g2---approved-customer-sees-their-card-details",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "G2 - Approved customer sees their card details",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 198656399
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1765429000
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 471742299
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I open the cards page",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:12"
+            }
+          },
+          {
+            "result": {
+              "status": "failed",
+              "duration": 5017504099,
+              "error_message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByTestId('cards-card-summary')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 5000ms\n  - waiting for getByTestId('cards-card-summary')\n\n    at captureRawStack (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright-core\\lib\\coreBundle.js:9681:17)\n    at callMatcherAsStep (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13310:57)\n    at Object.toBeVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13300:23)\n    at BasePage.verifyVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\support\\BasePage.ts:24:27)\n    at CustomWorld.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\step_definitions\\credit_card.steps.ts:17:23)"
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see my card with limit, available credit and APR",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:16"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 48485699
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "credit-card",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Credit Card",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "features\\credit_card.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "getting-started;a1---open-an-account-successfully",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "A1 - Open an account successfully",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 187038699
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 316778299
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the ZincBank sign-up page",
+            "match": {
+              "location": "step_definitions\\getting_started.steps.ts:7"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 482821099
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I open an account with a unique email and password",
+            "match": {
+              "location": "step_definitions\\getting_started.steps.ts:11"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1870881900
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the account approval message",
+            "match": {
+              "location": "step_definitions\\getting_started.steps.ts:16"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 62908199
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "getting-started;a2---sign-in-with-correct-credentials",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "A2 - Sign in with correct credentials",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 177205899
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 715351500
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I have an existing ZincBank account",
+            "match": {
+              "location": "step_definitions\\getting_started.steps.ts:21"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 171371800
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I sign in with the correct credentials",
+            "match": {
+              "location": "step_definitions\\getting_started.steps.ts:27"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1354134299
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should be taken to the dashboard",
+            "match": {
+              "location": "step_definitions\\getting_started.steps.ts:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 46959600
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 9
+          },
+          {
+            "name": "@regression",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "getting-started",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Getting Started",
+    "tags": [],
+    "uri": "features\\getting_started.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "moving-money;d3---add-a-payee-to-my-list",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "D3 - Add a payee to my list",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 179123900
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1701898299
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 577110199
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I add a payee to my list",
+            "match": {
+              "location": "step_definitions\\moving_money.steps.ts:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 4071699
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the payee should appear in my list",
+            "match": {
+              "location": "step_definitions\\moving_money.steps.ts:41"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 39635999
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 17
+          },
+          {
+            "name": "@regression",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "moving-money;d4---transfer-with-insufficient-funds-is-blocked",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "D4 - Transfer with insufficient funds is blocked",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 180390599
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1757086699
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "failed",
+              "duration": 30015849699,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:635:17)\n    at processTimers (node:internal/timers:571:7)"
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I try to transfer more than I have",
+            "match": {
+              "location": "step_definitions\\moving_money.steps.ts:45"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should see an insufficient funds error and no transfer happens",
+            "match": {
+              "location": "step_definitions\\moving_money.steps.ts:50"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 39125599
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 22
+          },
+          {
+            "name": "@regression",
+            "line": 22
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "moving-money",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Moving Money",
+    "tags": [],
+    "uri": "features\\moving_money.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "statements-and-history;f1---view-the-transaction-history-for-an-account",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "F1 - View the transaction history for an account",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 165540500
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1874354699
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 530750499
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I open the transactions page",
+            "match": {
+              "location": "step_definitions\\statements_and_history.steps.ts:4"
+            }
+          },
+          {
+            "result": {
+              "status": "failed",
+              "duration": 5036712200,
+              "error_message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByTestId('transactions-balance')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 5000ms\n  - waiting for getByTestId('transactions-balance')\n\n    at captureRawStack (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright-core\\lib\\coreBundle.js:9681:17)\n    at callMatcherAsStep (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13310:57)\n    at Object.toBeVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13300:23)\n    at BasePage.verifyVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\support\\BasePage.ts:24:27)\n    at CustomWorld.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\step_definitions\\statements_and_history.steps.ts:11:23)"
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see the transaction history for the selected account",
+            "match": {
+              "location": "step_definitions\\statements_and_history.steps.ts:8"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 39983400
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "statements-and-history",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Statements and History",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "features\\statements_and_history.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "your-accounts;b1---customer-sees-all-their-accounts-with-balances",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "B1 - Customer sees all their accounts with balances",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 177018600
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2340665899
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 488377999
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I view my accounts",
+            "match": {
+              "location": "step_definitions\\your_accounts.steps.ts:5"
+            }
+          },
+          {
+            "result": {
+              "status": "failed",
+              "duration": 5008741000,
+              "error_message": "Error: expect(locator).toBeVisible() failed\n\nLocator:  getByTestId('accounts-list')\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 5000ms\n  - waiting for getByTestId('accounts-list')\n    14 × locator resolved to <div data-testid=\"accounts-list\" class=\"grid gap-4 sm:grid-cols-2\"></div>\n       - unexpected value \"hidden\"\n\n    at captureRawStack (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright-core\\lib\\coreBundle.js:9681:17)\n    at callMatcherAsStep (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13310:57)\n    at Object.toBeVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13300:23)\n    at BasePage.verifyVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\support\\BasePage.ts:24:27)\n    at CustomWorld.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\step_definitions\\your_accounts.steps.ts:10:23)"
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see my checking account with a balance",
+            "match": {
+              "location": "step_definitions\\your_accounts.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 49244800
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 6
+          },
+          {
+            "name": "@regression",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "your-accounts;b4---direct-access-to-a-non-existent-account-is-denied",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "B4 - Direct access to a non-existent account is denied",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 165959500
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2388523600
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 593963900
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I navigate to a non-existent account",
+            "match": {
+              "location": "step_definitions\\your_accounts.steps.ts:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 19187899
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see a 404 not found page",
+            "match": {
+              "location": "step_definitions\\your_accounts.steps.ts:40"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 36610499
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 21
+          },
+          {
+            "name": "@regression",
+            "line": 21
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "your-accounts",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Your Accounts",
+    "tags": [],
+    "uri": "features\\your_accounts.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "your-details-and-security;h1---see-my-personal-details",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "H1 - See my personal details",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 177161999
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1700419999
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 698373500
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I open the profile page",
+            "match": {
+              "location": "step_definitions\\your_details_and_security.steps.ts:5"
+            }
+          },
+          {
+            "result": {
+              "status": "failed",
+              "duration": 5024374199,
+              "error_message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByTestId('profile-firstname-input')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 5000ms\n  - waiting for getByTestId('profile-firstname-input')\n\n    at captureRawStack (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright-core\\lib\\coreBundle.js:9681:17)\n    at callMatcherAsStep (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13310:57)\n    at Object.toBeVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13300:23)\n    at BasePage.verifyVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\support\\BasePage.ts:24:27)\n    at CustomWorld.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\step_definitions\\your_details_and_security.steps.ts:11:23)"
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see my personal details",
+            "match": {
+              "location": "step_definitions\\your_details_and_security.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 35875899
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "your-details-and-security",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Your Details and Security",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "features\\your_details_and_security.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "your-money-at-a-glance;c1---dashboard-is-the-first-thing-shown-after-signing-in",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "C1 - Dashboard is the first thing shown after signing in",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 166083500
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2327767299
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 4065799
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see the dashboard with a welcome message",
+            "match": {
+              "location": "step_definitions\\your_money_at_a_glance.steps.ts:4"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 43751399
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 6
+          },
+          {
+            "name": "@regression",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "your-money-at-a-glance;c5---quick-transfer-shortcut-is-available",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "C5 - Quick transfer shortcut is available",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 171671799
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2337775999
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 29591100
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I click the quick transfer shortcut",
+            "match": {
+              "location": "step_definitions\\your_money_at_a_glance.steps.ts:21"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 823961299
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should be taken to the move money page",
+            "match": {
+              "location": "step_definitions\\your_money_at_a_glance.steps.ts:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 36204299
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 22
+          },
+          {
+            "name": "@regression",
+            "line": 22
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "your-money-at-a-glance",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Your Money at a Glance",
+    "tags": [],
+    "uri": "features\\your_money_at_a_glance.feature"
+  }
+]
