@@ -7,6 +7,8 @@ Given("I have a credit card", async function (this: CustomWorld) {
     await this.cardsPage.applyForCard("75000", "Employed", "1500", "0");
     await this.basePage.verifyVisible(this.cardsPage.cardSummary);
   }
+  // End on the dashboard so callers can assert dashboard state (e.g. C3)
+  await this.dashboardPage.goto();
 });
 
 When("I open the cards page", async function (this: CustomWorld) {

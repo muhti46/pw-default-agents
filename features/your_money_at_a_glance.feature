@@ -13,6 +13,7 @@ Feature: Your Money at a Glance
 
   @regression
   Scenario: C3 - Credit card is shown on the dashboard
+    Given I have a credit card
     Then I should see my credit card on the dashboard
 
   @regression

@@ -12,7 +12,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 266120399
+              "duration": 263075899
             },
             "keyword": "Before",
             "hidden": true
@@ -20,7 +20,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2962094000
+              "duration": 3271937099
             },
             "arguments": [],
             "keyword": "Given ",
@@ -33,34 +33,46 @@
           {
             "result": {
               "status": "passed",
-              "duration": 839975200
+              "duration": 1258566700
             },
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Given ",
             "line": 9,
-            "name": "I open the cards page",
+            "name": "I have a credit card",
             "match": {
-              "location": "step_definitions\\credit_card.steps.ts:12"
-            }
-          },
-          {
-            "result": {
-              "status": "failed",
-              "duration": 5015700800,
-              "error_message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByTestId('cards-card-summary')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 5000ms\n  - waiting for getByTestId('cards-card-summary')\n\n    at captureRawStack (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright-core\\lib\\coreBundle.js:9681:17)\n    at callMatcherAsStep (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13310:57)\n    at Object.toBeVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13300:23)\n    at BasePage.verifyVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\support\\BasePage.ts:24:27)\n    at CustomWorld.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\step_definitions\\credit_card.steps.ts:17:23)"
-            },
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I should see my card with limit, available credit and APR",
-            "match": {
-              "location": "step_definitions\\credit_card.steps.ts:16"
+              "location": "step_definitions\\credit_card.steps.ts:4"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 45590400
+              "duration": 485373100
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I open the cards page",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:14"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 854059500
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see my card with limit, available credit and APR",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:18"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 48877300
             },
             "keyword": "After",
             "hidden": true
@@ -74,6 +86,258 @@
           {
             "name": "@smoke",
             "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "credit-card;g4---pay-my-card-from-my-current-account",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "G4 - Pay my card from my current account",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 207337499
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2525741000
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1802245600
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I have a credit card",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:4"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 637569499
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I open the cards page",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:14"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 861358299
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see the pay card form",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 46087500
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "credit-card;g5---download-my-card-statement",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "G5 - Download my card statement",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 196849900
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2338523400
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1248326700
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I have a credit card",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:4"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 717098699
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I open the cards page",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:14"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 848498899
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see a statement download link",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 47945199
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "credit-card;g6---customer-with-a-card-cannot-apply-again",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "G6 - Customer with a card cannot apply again",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 191498800
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2648701300
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1280611699
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I have a credit card",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:4"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 506722499
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I open the cards page",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:14"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 19120200
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I should not see a card application form",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:35"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 50055700
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
           }
         ],
         "type": "scenario"
@@ -104,7 +368,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 187777100
+              "duration": 182705799
             },
             "keyword": "Before",
             "hidden": true
@@ -112,7 +376,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 605968000
+              "duration": 610626899
             },
             "arguments": [],
             "keyword": "Given ",
@@ -125,7 +389,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 533308000
+              "duration": 544002099
             },
             "arguments": [],
             "keyword": "When ",
@@ -138,7 +402,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1354278400
+              "duration": 830110400
             },
             "arguments": [],
             "keyword": "Then ",
@@ -151,7 +415,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 59496299
+              "duration": 42765599
             },
             "keyword": "After",
             "hidden": true
@@ -179,7 +443,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 177072000
+              "duration": 216466799
             },
             "keyword": "Before",
             "hidden": true
@@ -187,7 +451,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 770557199
+              "duration": 1120917999
             },
             "arguments": [],
             "keyword": "Given ",
@@ -200,7 +464,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 207013900
+              "duration": 289202099
             },
             "arguments": [],
             "keyword": "When ",
@@ -213,7 +477,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2854773300
+              "duration": 1848893299
             },
             "arguments": [],
             "keyword": "Then ",
@@ -226,7 +490,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 48380099
+              "duration": 46112299
             },
             "keyword": "After",
             "hidden": true
@@ -240,6 +504,148 @@
           {
             "name": "@regression",
             "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "getting-started;a2---sign-in-with-an-incorrect-password",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "A2 - Sign in with an incorrect password",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 213141199
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 881306799
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I have an existing ZincBank account",
+            "match": {
+              "location": "step_definitions\\getting_started.steps.ts:21"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 194863900
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I sign in with an incorrect password",
+            "match": {
+              "location": "step_definitions\\getting_started.steps.ts:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 8089299
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I should see a sign-in error and remain on the login page",
+            "match": {
+              "location": "step_definitions\\getting_started.steps.ts:41"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 47509400
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "getting-started;a3---sign-up-with-an-already-registered-email-is-rejected",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "A3 - Sign up with an already-registered email is rejected",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 195066399
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 716793800
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I have an existing ZincBank account",
+            "match": {
+              "location": "step_definitions\\getting_started.steps.ts:21"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 448571900
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I try to open another account with the same email",
+            "match": {
+              "location": "step_definitions\\getting_started.steps.ts:46"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 4360699
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should not reach the approval screen",
+            "match": {
+              "location": "step_definitions\\getting_started.steps.ts:50"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 51714299
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 21
           }
         ],
         "type": "scenario"
@@ -257,15 +663,15 @@
     "elements": [
       {
         "description": "",
-        "id": "moving-money;d3---add-a-payee-to-my-list",
+        "id": "moving-money;d1---transfer-between-my-own-accounts",
         "keyword": "Scenario",
-        "line": 18,
-        "name": "D3 - Add a payee to my list",
+        "line": 7,
+        "name": "D1 - Transfer between my own accounts",
         "steps": [
           {
             "result": {
               "status": "passed",
-              "duration": 175688300
+              "duration": 194525999
             },
             "keyword": "Before",
             "hidden": true
@@ -273,7 +679,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2335347800
+              "duration": 2935024099
             },
             "arguments": [],
             "keyword": "Given ",
@@ -286,33 +692,188 @@
           {
             "result": {
               "status": "passed",
-              "duration": 743393000
+              "duration": 1275661000
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I transfer money between my accounts",
+            "match": {
+              "location": "step_definitions\\moving_money.steps.ts:22"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3806500
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the transfer should be completed",
+            "match": {
+              "location": "step_definitions\\moving_money.steps.ts:27"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 39730300
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "moving-money;d2---pay-a-company-i-owe",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "D2 - Pay a company I owe",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 198155999
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2312691899
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 935517299
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I have a saved payee",
+            "match": {
+              "location": "step_definitions\\moving_money.steps.ts:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 755745000
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I pay a bill to the payee",
+            "match": {
+              "location": "step_definitions\\moving_money.steps.ts:40"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3099799
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the bill payment should be completed",
+            "match": {
+              "location": "step_definitions\\moving_money.steps.ts:48"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 42580699
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "moving-money;d3---add-a-payee-to-my-list",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "D3 - Add a payee to my list",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 194613899
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2356854199
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1881769899
             },
             "arguments": [],
             "keyword": "When ",
             "line": 19,
             "name": "I add a payee to my list",
             "match": {
-              "location": "step_definitions\\moving_money.steps.ts:36"
+              "location": "step_definitions\\moving_money.steps.ts:52"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 3836999
+              "duration": 3476900
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
             "name": "the payee should appear in my list",
             "match": {
-              "location": "step_definitions\\moving_money.steps.ts:41"
+              "location": "step_definitions\\moving_money.steps.ts:57"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 42723500
+              "duration": 48202600
             },
             "keyword": "After",
             "hidden": true
@@ -340,7 +901,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 173873800
+              "duration": 188907200
             },
             "keyword": "Before",
             "hidden": true
@@ -348,7 +909,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2420603399
+              "duration": 2310173699
             },
             "arguments": [],
             "keyword": "Given ",
@@ -360,35 +921,34 @@
           },
           {
             "result": {
-              "status": "failed",
-              "duration": 30007829900,
-              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:635:17)\n    at processTimers (node:internal/timers:571:7)"
+              "status": "passed",
+              "duration": 577998800
             },
             "arguments": [],
             "keyword": "When ",
             "line": 24,
             "name": "I try to transfer more than I have",
             "match": {
-              "location": "step_definitions\\moving_money.steps.ts:45"
+              "location": "step_definitions\\moving_money.steps.ts:61"
             }
           },
           {
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 839416199
             },
             "arguments": [],
             "keyword": "Then ",
             "line": 25,
             "name": "I should see an insufficient funds error and no transfer happens",
             "match": {
-              "location": "step_definitions\\moving_money.steps.ts:50"
+              "location": "step_definitions\\moving_money.steps.ts:66"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 41224900
+              "duration": 42907099
             },
             "keyword": "After",
             "hidden": true
@@ -402,6 +962,77 @@
           {
             "name": "@regression",
             "line": 22
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "moving-money;d5---pressing-pay-twice-does-not-charge-twice",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "D5 - Pressing pay twice does not charge twice",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 200825299
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2296746699
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1731959200
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "I submit the transfer twice",
+            "match": {
+              "location": "step_definitions\\moving_money.steps.ts:70"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 833778599
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "only one transfer should be recorded",
+            "match": {
+              "location": "step_definitions\\moving_money.steps.ts:79"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 75055999
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 27
           }
         ],
         "type": "scenario"
@@ -427,7 +1058,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 193202799
+              "duration": 207422100
             },
             "keyword": "Before",
             "hidden": true
@@ -435,7 +1066,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2900827499
+              "duration": 2353898900
             },
             "arguments": [],
             "keyword": "Given ",
@@ -448,7 +1079,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 504343999
+              "duration": 514840600
             },
             "arguments": [],
             "keyword": "When ",
@@ -461,7 +1092,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 21245999
+              "duration": 25915499
             },
             "arguments": [],
             "keyword": "Then ",
@@ -474,7 +1105,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 37899700
+              "duration": 43877100
             },
             "keyword": "After",
             "hidden": true
@@ -488,6 +1119,232 @@
           {
             "name": "@smoke",
             "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "statements-and-history;f2---filter-transactions-by-date-range",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "F2 - Filter transactions by date range",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 189180099
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2328447599
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 560091300
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I open the transactions page",
+            "match": {
+              "location": "step_definitions\\statements_and_history.steps.ts:4"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 90397600
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I apply a date range filter",
+            "match": {
+              "location": "step_definitions\\statements_and_history.steps.ts:14"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3125099
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the transactions should be filtered to that range",
+            "match": {
+              "location": "step_definitions\\statements_and_history.steps.ts:20"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 51403900
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "statements-and-history;f3---download-a-monthly-statement",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "F3 - Download a monthly statement",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 203311099
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1782082000
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 630039799
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I open the transactions page",
+            "match": {
+              "location": "step_definitions\\statements_and_history.steps.ts:4"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 33137099
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I should see a statement download option for the account",
+            "match": {
+              "location": "step_definitions\\statements_and_history.steps.ts:25"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 47651700
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "statements-and-history;f4---card-statement-is-available",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "F4 - Card statement is available",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 234390700
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1779597999
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 583788700
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I open the transactions page",
+            "match": {
+              "location": "step_definitions\\statements_and_history.steps.ts:4"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20455500
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see the card statement option",
+            "match": {
+              "location": "step_definitions\\statements_and_history.steps.ts:30"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 45958299
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
           }
         ],
         "type": "scenario"
@@ -518,7 +1375,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 175968799
+              "duration": 185234600
             },
             "keyword": "Before",
             "hidden": true
@@ -526,7 +1383,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2253159699
+              "duration": 2268562900
             },
             "arguments": [],
             "keyword": "Given ",
@@ -539,7 +1396,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 550781900
+              "duration": 472519299
             },
             "arguments": [],
             "keyword": "When ",
@@ -551,9 +1408,8 @@
           },
           {
             "result": {
-              "status": "failed",
-              "duration": 5025933000,
-              "error_message": "Error: expect(locator).toContainText(expected) failed\n\nLocator: getByTestId('accounts-list')\nExpected substring: \"Checking\"\nReceived string:    \"Savings••1264$0.00\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"to.have.text\" with timeout 5000ms\n  - waiting for getByTestId('accounts-list')\n    14 × locator resolved to <div data-testid=\"accounts-list\" class=\"grid gap-4 sm:grid-cols-2\">…</div>\n       - unexpected value \"Savings••1264$0.00\"\n\n    at captureRawStack (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright-core\\lib\\coreBundle.js:9681:17)\n    at callMatcherAsStep (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13310:57)\n    at Object.toContainText (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13300:23)\n    at BasePage.verifyText (C:\\Users\\muhte\\Desktop\\pw-default-agents\\support\\BasePage.ts:32:27)\n    at CustomWorld.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\step_definitions\\your_accounts.steps.ts:11:23)"
+              "status": "passed",
+              "duration": 27048799
             },
             "arguments": [],
             "keyword": "Then ",
@@ -566,7 +1422,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 38376600
+              "duration": 44135299
             },
             "keyword": "After",
             "hidden": true
@@ -586,15 +1442,15 @@
       },
       {
         "description": "",
-        "id": "your-accounts;b4---direct-access-to-a-non-existent-account-is-denied",
+        "id": "your-accounts;b2---open-an-account-and-see-payment-details",
         "keyword": "Scenario",
-        "line": 22,
-        "name": "B4 - Direct access to a non-existent account is denied",
+        "line": 12,
+        "name": "B2 - Open an account and see payment details",
         "steps": [
           {
             "result": {
               "status": "passed",
-              "duration": 184980700
+              "duration": 210101899
             },
             "keyword": "Before",
             "hidden": true
@@ -602,7 +1458,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2362433000
+              "duration": 1751606899
             },
             "arguments": [],
             "keyword": "Given ",
@@ -615,7 +1471,149 @@
           {
             "result": {
               "status": "passed",
-              "duration": 676502699
+              "duration": 635577900
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I open the first account",
+            "match": {
+              "location": "step_definitions\\your_accounts.steps.ts:15"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 836593500
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see the account payment details",
+            "match": {
+              "location": "step_definitions\\your_accounts.steps.ts:20"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 44960100
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "your-accounts;b3---open-an-additional-account-self-service",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "B3 - Open an additional account self-service",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 193569999
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2257242700
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 645878800
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I open a savings account",
+            "match": {
+              "location": "step_definitions\\your_accounts.steps.ts:27"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3749200
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "a savings account should be listed",
+            "match": {
+              "location": "step_definitions\\your_accounts.steps.ts:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 41606499
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "your-accounts;b4---direct-access-to-a-non-existent-account-is-denied",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "B4 - Direct access to a non-existent account is denied",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 192690900
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1755305500
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 555609500
             },
             "arguments": [],
             "keyword": "When ",
@@ -628,7 +1626,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 20526400
+              "duration": 24438399
             },
             "arguments": [],
             "keyword": "Then ",
@@ -641,7 +1639,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 41007899
+              "duration": 46049499
             },
             "keyword": "After",
             "hidden": true
@@ -680,7 +1678,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 175998599
+              "duration": 213693599
             },
             "keyword": "Before",
             "hidden": true
@@ -688,7 +1686,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2397048599
+              "duration": 1779999500
             },
             "arguments": [],
             "keyword": "Given ",
@@ -701,7 +1699,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 395373500
+              "duration": 523440300
             },
             "arguments": [],
             "keyword": "When ",
@@ -713,9 +1711,8 @@
           },
           {
             "result": {
-              "status": "failed",
-              "duration": 5036223099,
-              "error_message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByTestId('profile-firstname-input')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"to.be.visible\" with timeout 5000ms\n  - waiting for getByTestId('profile-firstname-input')\n\n    at captureRawStack (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright-core\\lib\\coreBundle.js:9681:17)\n    at callMatcherAsStep (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13310:57)\n    at Object.toBeVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\node_modules\\playwright\\lib\\matchers\\expect.js:13300:23)\n    at BasePage.verifyVisible (C:\\Users\\muhte\\Desktop\\pw-default-agents\\support\\BasePage.ts:24:27)\n    at CustomWorld.<anonymous> (C:\\Users\\muhte\\Desktop\\pw-default-agents\\step_definitions\\your_details_and_security.steps.ts:11:23)"
+              "status": "passed",
+              "duration": 853660499
             },
             "arguments": [],
             "keyword": "Then ",
@@ -728,7 +1725,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 42786900
+              "duration": 43206699
             },
             "keyword": "After",
             "hidden": true
@@ -742,6 +1739,316 @@
           {
             "name": "@smoke",
             "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "your-details-and-security;h2---change-my-personal-details",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "H2 - Change my personal details",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 191684199
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1728941800
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 463148900
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I open the profile page",
+            "match": {
+              "location": "step_definitions\\your_details_and_security.steps.ts:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 884717099
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I update my phone number",
+            "match": {
+              "location": "step_definitions\\your_details_and_security.steps.ts:17"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 4819100
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "my phone number should be updated",
+            "match": {
+              "location": "step_definitions\\your_details_and_security.steps.ts:22"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 48598899
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "your-details-and-security;h2---email-address-cannot-be-changed",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "H2 - Email address cannot be changed",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 192545299
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2519070999
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 439560199
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I open the profile page",
+            "match": {
+              "location": "step_definitions\\your_details_and_security.steps.ts:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 845497800
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the email field should be disabled",
+            "match": {
+              "location": "step_definitions\\your_details_and_security.steps.ts:27"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 47623300
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "your-details-and-security;h3---change-my-password",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "H3 - Change my password",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 195825799
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2316643300
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 585723200
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I open the profile page",
+            "match": {
+              "location": "step_definitions\\your_details_and_security.steps.ts:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 28115699
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see the change password form",
+            "match": {
+              "location": "step_definitions\\your_details_and_security.steps.ts:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 41744800
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "your-details-and-security;h4---signed-out-visitor-cannot-access-private-pages",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "H4 - Signed out visitor cannot access private pages",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 205595400
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1769391399
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2816805599
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I am signed out",
+            "match": {
+              "location": "step_definitions\\your_details_and_security.steps.ts:38"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 121116000
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I try to access the dashboard",
+            "match": {
+              "location": "step_definitions\\your_details_and_security.steps.ts:48"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 21426000
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "I should be redirected to the login page",
+            "match": {
+              "location": "step_definitions\\your_details_and_security.steps.ts:52"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 45926900
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
           }
         ],
         "type": "scenario"
@@ -772,7 +2079,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 187395400
+              "duration": 192166299
             },
             "keyword": "Before",
             "hidden": true
@@ -780,7 +2087,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 3564209400
+              "duration": 2707911699
             },
             "arguments": [],
             "keyword": "Given ",
@@ -793,7 +2100,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 6622699
+              "duration": 3727299
             },
             "arguments": [],
             "keyword": "Then ",
@@ -806,7 +2113,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 36972399
+              "duration": 45957099
             },
             "keyword": "After",
             "hidden": true
@@ -826,15 +2133,15 @@
       },
       {
         "description": "",
-        "id": "your-money-at-a-glance;c5---quick-transfer-shortcut-is-available",
+        "id": "your-money-at-a-glance;c2---total-deposit-balance-is-shown-at-a-glance",
         "keyword": "Scenario",
-        "line": 23,
-        "name": "C5 - Quick transfer shortcut is available",
+        "line": 11,
+        "name": "C2 - Total deposit balance is shown at a glance",
         "steps": [
           {
             "result": {
               "status": "passed",
-              "duration": 162204599
+              "duration": 195206700
             },
             "keyword": "Before",
             "hidden": true
@@ -842,7 +2149,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 2810188000
+              "duration": 2235684099
             },
             "arguments": [],
             "keyword": "Given ",
@@ -855,11 +2162,198 @@
           {
             "result": {
               "status": "passed",
-              "duration": 26578500
+              "duration": 2097099
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see my total deposit balance",
+            "match": {
+              "location": "step_definitions\\your_money_at_a_glance.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 46369300
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "your-money-at-a-glance;c3---credit-card-is-shown-on-the-dashboard",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "C3 - Credit card is shown on the dashboard",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 193452400
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2330559399
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1275144000
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I have a credit card",
+            "match": {
+              "location": "step_definitions\\credit_card.steps.ts:4"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 22542500
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see my credit card on the dashboard",
+            "match": {
+              "location": "step_definitions\\your_money_at_a_glance.steps.ts:13"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 52929899
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 14
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "your-money-at-a-glance;c4---recent-activity-is-shown-on-the-dashboard",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "C4 - Recent activity is shown on the dashboard",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 193061699
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2285972700
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2621299
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see the recent activity section",
+            "match": {
+              "location": "step_definitions\\your_money_at_a_glance.steps.ts:17"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 48568700
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 19
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "your-money-at-a-glance;c5---quick-transfer-shortcut-is-available",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "C5 - Quick transfer shortcut is available",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 233845000
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2443610700
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am signed in to ZincBank",
+            "match": {
+              "location": "support\\common.steps.ts:9"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 18713900
             },
             "arguments": [],
             "keyword": "When ",
-            "line": 24,
+            "line": 25,
             "name": "I click the quick transfer shortcut",
             "match": {
               "location": "step_definitions\\your_money_at_a_glance.steps.ts:21"
@@ -868,11 +2362,11 @@
           {
             "result": {
               "status": "passed",
-              "duration": 827013999
+              "duration": 830430800
             },
             "arguments": [],
             "keyword": "Then ",
-            "line": 25,
+            "line": 26,
             "name": "I should be taken to the move money page",
             "match": {
               "location": "step_definitions\\your_money_at_a_glance.steps.ts:25"
@@ -881,7 +2375,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 38536900
+              "duration": 53331899
             },
             "keyword": "After",
             "hidden": true
@@ -890,11 +2384,11 @@
         "tags": [
           {
             "name": "@smoke",
-            "line": 22
+            "line": 23
           },
           {
             "name": "@regression",
-            "line": 22
+            "line": 23
           }
         ],
         "type": "scenario"

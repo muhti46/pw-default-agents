@@ -38,7 +38,7 @@ Then("I should see the change password form", async function (this: CustomWorld)
 Given("I am signed out", async function (this: CustomWorld) {
   // Sign in first, then sign out to clear the session
   await this.loginPage.goto();
-  await this.loginPage.login("e2e-moduleb@example.com", "TestPass123!");
+  await this.loginPage.login("e2e-moduleb2@example.com", "TestPass123!");
   await this.basePage.verifyUrlPattern(/\/dashboard/);
   await this.dashboardPage.signOut();
   // Confirm we are back on the login page (session cleared)

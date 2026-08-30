@@ -77,6 +77,10 @@ export class MoveMoneyPage extends BasePage {
     return this.page.getByTestId("payee-manager").getByText(name);
   }
 
+  async getTransferAccountOptions(): Promise<string[]> {
+    return this.transferFrom.locator("option").allTextContents();
+  }
+
   async goto() {
     await this.navigate("/move-money");
   }

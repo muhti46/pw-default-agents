@@ -2,12 +2,26 @@ import { Given, When, Then } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import { CustomWorld } from "../support/hooks";
 
-const FROM_ACCOUNT = "Checking ••0865 ($0.00)";
-const TO_ACCOUNT = "Savings ••0866 ($0.00)";
+// Account labels are read from the live form so the tests survive account data resets.
+async function ensureTwoAccounts(world: CustomWorld) {
+  await world.moveMoneyPage.goto();
+  const options = await world.moveMoneyPage.getTransferAccountOptions();
+  if (options.length < 2) {
+    await world.accountsPage.goto();
+    await world.accountsPage.openSavingsIfAvailable();
+    await world.moveMoneyPage.goto();
+  }
+}
+
+async function getAccounts(world: CustomWorld): Promise<{ from: string; to: string }> {
+  await ensureTwoAccounts(world);
+  const options = await world.moveMoneyPage.getTransferAccountOptions();
+  return { from: options[0], to: options[1] };
+}
 
 When("I transfer money between my accounts", async function (this: CustomWorld) {
-  await this.moveMoneyPage.goto();
-  await this.moveMoneyPage.transfer(FROM_ACCOUNT, TO_ACCOUNT, "10", "test transfer");
+  const { from, to } = await getAccounts(this);
+  await this.moveMoneyPage.transfer(from, to, "10", "test transfer");
 });
 
 Then("the transfer should be completed", async function (this: CustomWorld) {
@@ -19,12 +33,14 @@ Given("I have a saved payee", async function (this: CustomWorld) {
   await this.moveMoneyPage.goto();
   if (await this.moveMoneyPage.billpayNoPayees.isVisible()) {
     await this.moveMoneyPage.addPayee("Electric Co", "123456789");
+    await this.basePage.verifyVisible(this.moveMoneyPage.payeeRow("Electric Co"));
   }
 });
 
 When("I pay a bill to the payee", async function (this: CustomWorld) {
-  await this.moveMoneyPage.goto();
-  await this.moveMoneyPage.billpayFrom.selectOption({ label: FROM_ACCOUNT });
+  const { from } = await getAccounts(this);
+  await this.basePage.verifyVisible(this.moveMoneyPage.billpayForm);
+  await this.moveMoneyPage.billpayFrom.selectOption({ label: from });
   await this.moveMoneyPage.billpayAmount.fill("10");
   await this.moveMoneyPage.billpaySubmit.click();
 });
@@ -43,8 +59,8 @@ Then("the payee should appear in my list", async function (this: CustomWorld) {
 });
 
 When("I try to transfer more than I have", async function (this: CustomWorld) {
-  await this.moveMoneyPage.goto();
-  await this.moveMoneyPage.transfer(FROM_ACCOUNT, TO_ACCOUNT, "1000");
+  const { from, to } = await getAccounts(this);
+  await this.moveMoneyPage.transfer(from, to, "1000");
 });
 
 Then("I should see an insufficient funds error and no transfer happens", async function (this: CustomWorld) {
@@ -52,9 +68,9 @@ Then("I should see an insufficient funds error and no transfer happens", async f
 });
 
 When("I submit the transfer twice", async function (this: CustomWorld) {
-  await this.moveMoneyPage.goto();
-  await this.moveMoneyPage.transferFrom.selectOption({ label: FROM_ACCOUNT });
-  await this.moveMoneyPage.transferTo.selectOption({ label: TO_ACCOUNT });
+  const { from, to } = await getAccounts(this);
+  await this.moveMoneyPage.transferFrom.selectOption({ label: from });
+  await this.moveMoneyPage.transferTo.selectOption({ label: to });
   await this.moveMoneyPage.transferAmount.fill("10");
   await this.moveMoneyPage.transferSubmit.click();
   await this.moveMoneyPage.transferSubmit.click();
